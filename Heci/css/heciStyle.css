@@ -1,0 +1,195 @@
+#wrapper{
+	width: 1300px;
+	height: 1000px;
+	margin: 0 auto;
+	background: #20C2EA; }
+
+.clear{clear: both;}
+
+/*<!-- HECININ OZU -->*/
+.heci{
+	position: relative;
+	top: 80px;
+	left: 100px;
+	width: 120px;
+	height: 200px;
+	z-index: 2;
+	/*border:1px solid black;*/}
+.haciBasi{
+	position: relative;
+	top:7px;
+	left:38px;
+	border-radius: 19px;
+	width: 40px;
+	height: 43px;
+	border:1px solid black;
+	background: yellow;}
+.heciBeden{
+	position: relative;
+	top:5px;
+	left:24px;
+	border-radius: 19px;
+	width: 70px;
+	z-index: 1;
+	height: 83px;
+	border:1px solid black;
+	background: red;}
+.heciElleri{
+	position: relative;
+	top:-80px;
+	left: 10px;
+	color:white;
+	font-size: 74px;
+	font-weight: bold;}
+.heciElleris{
+	position: relative;
+	top:-145px;
+	left: 90px;
+	font-size: 74px;
+	color: white;
+	font-weight: bold;}
+.heciAyaqlari{
+	position: relative;
+	top:-145px;
+	left: 47px;
+	color: white;
+	font-size: 64px;
+	font-weight: bold;
+	z-index: 0;}
+
+/*TUNEL*/
+.tunel1{
+	position: relative;
+	top: -200px;
+	left: 270px;
+	width: 310px;
+	height: 100px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;background: brown;}
+.tunel11{
+	position:relative;
+	top: -88px;
+	left: 263px;
+	width: 15px;
+	height: 92px;
+	border-top: 15px solid black;
+	border-bottom: 15px solid black;
+	z-index: 1;}
+
+.tunel2{
+	position:relative;
+	width: 99px;background: brown;
+	height: 350px;
+	top: -201px;
+	left:581px;
+	border-right: 1px solid black;
+	border-left: 1px solid black;}
+.tunel3{
+	position: relative;
+	width: 102px;
+	height: 101px;
+	top: -652px;background: brown;
+	left:579px;
+	border-top: 1px solid black;
+	border-right: 1px solid black;}
+.tunel4{
+	position: relative;
+	top: -303px;
+	left: 681px;
+	width: 310px;background: brown;
+	height: 100px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;}
+.tunel5{
+	position: relative;
+	width: 100px;background: brown;
+	height: 101px;
+	top: -405px;
+	left:581px;
+	border-bottom:1px solid black;
+	border-left: 1px solid black;}
+.tunel55{
+	position: relative;
+	top: -516px;
+	left: 987px;
+	width: 10px;
+	height: 92px;
+	z-index: 1;
+	border-top: 15px solid black;
+	border-bottom: 15px solid black;}
+/*CAMI*/
+.cami{
+	position: relative;
+	top: -786px;
+	left: 1067px;}
+
+.heci{
+  -webkit-animation: heci 6s; 
+  animation-iteration-count: infinite;
+  /*animation-delay: 0s;*/
+  animation-fill-mode: forwards;
+  z-index: 3;}
+
+.tunel1{
+    -webkit-animation: tunel 0.1s; 
+  /*  animation: heci 5s;*/
+  animation-iteration-count: infinite;
+/*  animation-delay: 2s;
+*/    animation-fill-mode: forwards;
+    z-index: 0;}
+    @keyframes tunel {
+    from {background:green;}
+    to {background: yellow;}}
+.tunel2{
+    -webkit-animation: tunell 0.1s; 
+  /*  animation: heci 5s;*/
+  animation-iteration-count: infinite;
+ /* animation-delay: 2s;*/
+    animation-fill-mode: forwards;
+    z-index: 0;}
+    @keyframes tunell {
+    from {background:#FC64FF;}
+    to {background: #54FF32;}}
+.tunel3{
+    -webkit-animation: tunelll 0.1s; 
+  /*  animation: heci 5s;*/
+  animation-iteration-count: infinite;
+/*  animation-delay: 2s;*/
+    animation-fill-mode: forwards;
+    z-index: 0;}
+    @keyframes tunelll {
+    from {background:#FF0073;}
+    to {background: #FFFAFA;}}
+.tunel4,.tunel5{
+    -webkit-animation: tunelll 0.1s; 
+  /*  animation: heci 5s;*/
+  animation-iteration-count: infinite;
+/*  animation-delay: 2s;*/
+    animation-fill-mode: forwards;
+    z-index: 0;}
+    @keyframes tunelll {
+    from {background:#FF0073;}
+    to {background: #FFFAFA;}}
+@keyframes heci {
+    from {top:70px;left:20;transform:rotate(0deg);}
+    25% {top:70px;left:560px;transform:rotate(90deg);}
+    50% {top:500px;left:560px;transform:rotate(180deg);}
+    75% {top:530px;left:900px;transform:rotate(90deg);}
+    to {top:520px;left:1138px;transform:rotate(0deg);}}
+
+.haciBasi:hover{
+	background: aqua;
+	border-radius: 20px;
+	transform: rotate(180deg);
+}
+.heciBeden:hover{
+	background: green;
+	border-radius: 20px;
+}
+
+.heciBeden:hover{
+	border:2px solid aqua;
+	border-radius:100%;
+	transform-origin: center center;
+	/*transform:translate(200px,100px) scale(1) rotate(360deg);*/
+	box-shadow: 0px 0px 20px 10px #456780 inset;
